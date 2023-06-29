@@ -15,7 +15,7 @@
         "test:js": "eslint --fix src/js/",
         "test:scss": "stylelint --fix src/sass/",
         "server": "json-server --port 3131 --no-cors --delay 250 --watch dist/db/app.json",
-        "build": "npm-run-all build:* test",
+        "build": "npm-run-all build:*",
         "build:clean": "rimraf dist && mkdirp dist",
         "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
         "build:sass": "sass src/sass:dist/css ",
@@ -43,10 +43,13 @@
         "postcss": "^8.2.6",
         "postcss-cli": "^8.3.1",
         "rimraf": "^3.0.2",
-        "stylelint": "^9.10.1",
-        "stylelint-scss": "^3.5.4"
+        "stylelint": "^14.11.0",
+        "stylelint-config-standard-scss": "^5.0.0",
+        "stylelint-scss": "^4.3.0"
     },
     "dependencies": {
+        "bootstrap": "^5.3.0",
+        "handlebars": "^4.7.7",
         "json-server": "^0.16.3",
         "normalize.css": "^8.0.1",
         "sass": "^1.35.1"
