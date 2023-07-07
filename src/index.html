@@ -56,53 +56,84 @@
     </div>
 
     <script id="template-home-widget" type="text/x-handlebars-template">
-    <div>
+        <div>
         <div class="home-products"></div>
         <div class="navbar-image-home w-100 d-flex justify-content-center align-items-center mt-5">
-        <div class="container">
+            <div class="container">
             <div class="abouts-us">
-            <h1 class="about-us-txt">ABOUT US</h1>
+                <h1 class="about-us-txt">ABOUT US</h1>
+            </div>
+            <div id="carouselAboutUs" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                    <img src="images/1.png" class="w-30" alt="Ping Nihao">
+                    <div class="carousel-txt d-flex flex-column">
+                        <h5 class="names">Ping Nihao</h5>
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada sem sed lacinia sollicitudin. Pellentesque malesuada enim ut nunc pharetra.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                    <img src="images/2.png" class="w-30" alt="Max Selfish">
+                    <div class="carousel-txt d-flex flex-column">
+                        <h5 class="names">Max Selfish</h5>
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada sem sed lacinia sollicitudin. Pellentesque malesuada enim ut nunc pharetra.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                    <img src="images/3.png" class="w-30" alt="Elizabeth Doherty">
+                    <div class="carousel-txt d-flex flex-column">
+                        <h5 class="names">Elizabeth Doherty</h5>
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras malesuada sem sed lacinia sollicitudin. Pellentesque malesuada enim ut nunc pharetra.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
             </div>
         </div>
-        </div>
         <div class="container">
-        <div class="footer">
+            <div class="footer">
             <h6 class="footer-txt">@2023 EL TIGRE inc.</h6>
+            </div>
         </div>
-        </div>
-    </div>   
+        </div>   
     </script>
 
     <script id="template-product-list" type="text/x-handlebars-template">
-    <div class="container">
+        <div class="container">
         <h1 class="product-title">PRODUCTS</h1>
         {{#each products}}
-        <div class="prod my-5">
+            <div class="prod my-5">
             <article class="product-wrapper">
-            <div class="row">
+                <div class="row">
                 <div class="product-text col-12 col-md-6">
-                <h3 class="prod-name">{{name}}</h3>
-                <div class="description">
+                    <h3 class="prod-name">{{name}}</h3>
+                    <div class="description">
                     <p>{{description}}</p>
-                </div>
-                <div class="ranking">
+                    </div>
+                    <div class="ranking">
                     <p class='roasting'>ROASTING: <span class="json-ranking">{{roasting}}</span></p>
                     <p class='intensity'>INTENSITY: <span class="json-ranking">{{intensity}}</span></p>
-                </div>
-                {{#if bestseller}}
-                <div class="bestseller-container">
+                    </div>
+                    {{#if bestseller}}
+                    <div class="bestseller-container">
                     <img src='{{bestseller-image}}' alt="bestseller-prod">
-                </div>
-                {{/if}}
+                    </div>
+                    {{/if}}
                 </div>
                 <div class="product-image col-12 col-md-6">
-                <img src='{{image}}' alt='prod'>
+                    <img src='{{image}}' alt='prod'>
                 </div>
-            </div>
+                </div>
             </article>
-        </div>
+            </div>
         {{/each}}
-    </div>
+        </div>
     </script>
 
     <script id="template-contact-widget" type="text/x-handlebars-template">
@@ -111,14 +142,14 @@
                 <h1 class="contact-title">CONTACT US</h1>
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <div class="form-floating">
-                    <input id="name" type="name" class="form-control" id="floatingName" placeholder="name">
-                    <label for="floatingName">NAME</label>
+                        <input id="name" type="name" class="form-control" id="floatingName" placeholder="name">
+                        <label for="floatingName">NAME</label>
                     </div>                  
                 </div>
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <div class="form-floating mt-4">
-                    <input id="title" type="title" class="form-control" id="floatingName" placeholder="name">
-                    <label for="floatingName">TITLE</label>
+                        <input id="title" type="title" class="form-control" id="floatingName" placeholder="name">
+                        <label for="floatingName">TITLE</label>
                     </div>                  
                 </div>
                 <div class="d-flex justify-content-center align-items-center h-100">

@@ -2,7 +2,7 @@
   > * {
     display: none;
   }
-    
+  
   > .active {
     display: block;
   }
@@ -91,11 +91,27 @@
   color: $main-color;
 }
 
+.bestseller-container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+}
+
+.bestseller-container img {
+  position: absolute;
+  top: 20%;
+  left: 130%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 576px){
   .product-wrapper .prod:nth-of-type(2) .product-image {
     order: 2;
   }
-    
+  
   .product-wrapper .prod:nth-of-type(2) .product-text {
     order: 1;
   }
@@ -110,16 +126,25 @@
   .product-wrapper .prod:nth-of-type(2) .product-image {
     order: 2;
   }
-    
+  
   .product-wrapper .prod:nth-of-type(2) .product-text {
     order: 1;
   }
 }
 
 @media (max-width: 1199px){
+  .bestseller-container img {
+    width: 200px;
+    left: 100%;
+  }
+
   .product-image img {
     box-shadow: none;
   }
 
-
+  .bestseller-container{
+    position: relative;
+    width: 300px;
+    height: 150px;
+  }
 }

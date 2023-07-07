@@ -6,7 +6,9 @@
         "description": "Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavour.",
         "roasting": "5/10",
         "intensity": "6/10",
-        "image": "./images/coffee-1.png"  
+        "image": "./images/coffee-1.png",
+        "bestseller": true,
+        "bestseller-image": "./images/bestseller.png"
 },
 {
     "id": "2",
