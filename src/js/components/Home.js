@@ -10,6 +10,7 @@ class Home {
   render(){
     const thisHome = this;
         
+    
     const generatedHTML = templates.homeWidget();
     const generatedDom = utils.createDOMFromHTML(generatedHTML);
     const homeWrapper = document.querySelector(select.containerOf.home);
